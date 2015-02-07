@@ -42,7 +42,7 @@ points(dat$DateTime, dat$Sub_metering_2, type="l", col="red")
 points(dat$DateTime, dat$Sub_metering_3, type="l", col="blue")
 
 # Add legend
-legend("topright", pch="_", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", pch="_", col=c("black", "red", "blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
 
 
 # Graph 3: Voltage --------------------------------------------------------
