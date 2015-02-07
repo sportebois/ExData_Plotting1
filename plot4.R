@@ -9,14 +9,15 @@ source("dataProvider.R")
 dat <- getUsableData()
 
 
-# Output to png
-# Regular PNG
-# png(filename = "plot4.png", width = 504, height = 504, units = "px")
-# But we'll use Cairo to get anti-alias PNG even on Windows
-library(Cairo)
-CairoPNG("plot4.png",  width = 504, height = 504)
-
 # Prepare the canvas to display 4 graphs
+
+# Output to png
+library(Cairo)
+# Regular PNG
+png(filename = "plot4.png", width = 480, height = 480, units = "px", type="cairo", bg=NA)
+# But we'll use Cairo to get anti-alias PNG even on Windows
+#CairoPNG("plot4.png",  width = 480, height = 480, bg=NA)
+
 par(mfcol = c(2,2), cex = 0.75) # 2 by 2 matrix, first two will be top left, bottom left
 
 

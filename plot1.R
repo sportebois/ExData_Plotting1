@@ -8,10 +8,10 @@ dat <- getUsableData()
 # Output to png
 
 # Regular PNG
-# png(filename = "plot1.png",  width = 504, height = 504, units = "px")
-# But we'll use Cairo to get anti-alias PNG even on Windows
 library(Cairo)
-CairoPNG("plot1.png",  width = 504, height = 504)
+png(filename = "plot1.png", width = 480, height = 480, units = "px", type="cairo", bg=NA)
+# Alternative:  Cairo to get anti-alias PNG even on Windows
+# Cairo("plot1.png",  width = 480, height = 480, type="png", bg=NA)
 
 lbl.title <- "Global Active Power"
 lbl.x <- "Global Active Power (kilowatts)"
